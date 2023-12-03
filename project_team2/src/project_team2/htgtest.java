@@ -6,6 +6,7 @@ public class htgtest {
 		// TODO Auto-generated method stub
 		System.out.println("hell world");
 		System.out.println("잘 되는가");
+		System.out.println("테스트");
 
 	}
 

@@ -2,7 +2,7 @@ package auth.trans.model;
 
 import java.sql.Date;
 
-public class Register {
+public class Apply {
 	
 	private int trans_num;
 	private String item;

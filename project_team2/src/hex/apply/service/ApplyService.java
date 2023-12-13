@@ -12,13 +12,13 @@ public class ApplyService {
 
     private TransDao transdao = new TransDao();
 
-    public Goods apply(String trans_num, String item, String change_num, Date t_date) {
+    public Goods apply(Integer trans_num, String item, Integer change_num, Date t_date) {
         try (Connection conn = ConnectionProvider.getConnection()) {
             Trans tr = new Trans(trans_num, item, change_num, t_date);  // Create a Trans object
             Trans trans = transdao.insert(conn, tr);
 
             if (trans == null) {
-                throw new InputFailException();
+                throw new InputFailException();  // Ensure InputFailException is defined
             }
 
             // Assuming Goods class has a constructor that takes the necessary parameters

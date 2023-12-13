@@ -3,14 +3,14 @@ package auth.trans.service;
 import java.sql.Date;
 import java.util.Map;
 
-public class RegisterRequest {
+public class ApplyRequest {
 	
 	private int trans_num;
 	private String item;
 	private Integer change_num;
 	private Date t_date;
 	
-	public RegisterRequest(int trans_num, String item, int change_num, Date t_date) {
+	public ApplyRequest(int trans_num, String item, int change_num, Date t_date) {
 		this.trans_num=trans_num;
 		this.item=item;
 		this.change_num=change_num;
